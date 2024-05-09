@@ -1,0 +1,83 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #272625;
+    color: #000000;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #16800c;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    color: #cdcdcd;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+
+nav a:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #780202;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+nav a:hover:after {
+    width: 100%;
+}
+
+section {
+    background-color: #078b0b;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Circular image */
+img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%; /* Make it circular */
+    width: 200px; /* Set width */
+    height: 300px; /* Set height */
+    object-fit: cover; /* Maintain aspect ratio */
+}
